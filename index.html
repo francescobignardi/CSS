@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +8,70 @@
 
     <style>
         h1,
-        .classe1{
+        .classe1 {
             color: blue;
         }
-        strong{
+
+        strong {
             background-color: brown;
         }
-        *{
+
+        * {
             font-size: 20px;
         }
-        .classe1.classe2{
+
+        .classe1.classe2 {
             border: solid 1px red;
         }
-        #univoco{
+
+        #univoco {
             background-color: cadetblue;
         }
-        a[title="Titolo"]{
+
+        a[title="Titolo"] {
             background-color: coral;
         }
-        p[class~="bao"]{
+
+        p[class~="bao"] {
             border: solid salmon;
         }
-        p[class^="ini"]{
+
+        p[class^="ini"] {
             border: solid salmon;
         }
-        p[class$="finisce"]{
+
+        p[class$="finisce"] {
             border: solid salmon;
         }
-        p[class*="bbb"]{
+
+        p[class*="bbb"] {
             border: solid salmon;
         }
-        a:hover{
+
+        a:hover {
             color: pink;
+        }
+        h2::first-line{
+            color: blue;
+        }
+        h2::before{
+            content: "Ciao";
+        }
+        h3 p{
+            color: blue;
+        }
+        h3 > p{
+            color: red;
+        }
+        h4 + p{
+            font-size:xx-large;
+        }
+        h4 ~ p{
+            background-color: red;
         }
     </style>
 </head>
+
 <body>
     <h1>Titolo</h1>
     <p>Paragrafo <strong>grassetto</strong></p>
@@ -63,7 +93,30 @@
     <p class="aaa finisce">Finisce$</p>
     <br>
     <p class="contiene bbb">Contiene*</p>
+    <br>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</h2>
 
+    <br>
+    <h3>
+        <div><p>Ciao</p></div>
+        <p>Ciao</p>
+        <p>Ciao</p>
+        <p>Ciao</p>
+        <p>Ciao</p>
+    </h3>
+
+    <br>
+
+    <h4>Titolo</h4>
+    <p>Ciao</p>
+    <p>Ciao</p>
+    <p>Ciao</p>
+    <p>Ciao</p>
 
 </body>
+
 </html>
