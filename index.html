@@ -6,12 +6,64 @@
     <title>Index</title>
 
     <style>
-        h1{
+        h1,
+        .classe1{
             color: blue;
+        }
+        strong{
+            background-color: brown;
+        }
+        *{
+            font-size: 20px;
+        }
+        .classe1.classe2{
+            border: solid 1px red;
+        }
+        #univoco{
+            background-color: cadetblue;
+        }
+        a[title="Titolo"]{
+            background-color: coral;
+        }
+        p[class~="bao"]{
+            border: solid salmon;
+        }
+        p[class^="ini"]{
+            border: solid salmon;
+        }
+        p[class$="finisce"]{
+            border: solid salmon;
+        }
+        p[class*="bbb"]{
+            border: solid salmon;
+        }
+        a:hover{
+            color: pink;
         }
     </style>
 </head>
 <body>
     <h1>Titolo</h1>
+    <p>Paragrafo <strong>grassetto</strong></p>
+    <p class="classe1">Paragrafo 1</p>
+    <br>
+    <p class="classe1 classe2">Paragrafo 2</p>
+    <br>
+    <p id="univoco">Paragrafo 3</p>
+    <br>
+    <a title="Titolo" href="pippo.php">Titolo</a>
+    <br>
+    <a title="Titolo2" href="pippo.php">Titolo</a>
+    <br>
+
+    <p class="prova bao">Contiene~</p>
+    <br>
+    <p class="inizio">Inizia^</p>
+    <br>
+    <p class="aaa finisce">Finisce$</p>
+    <br>
+    <p class="contiene bbb">Contiene*</p>
+
+
 </body>
 </html>
